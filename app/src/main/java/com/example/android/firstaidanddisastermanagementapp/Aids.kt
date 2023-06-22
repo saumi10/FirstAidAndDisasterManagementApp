@@ -11,7 +11,7 @@ class Aids : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aids)
 
-        getSupportActionBar()?.setTitle("");
+        getSupportActionBar()?.setTitle("Aids");
 
         // calling the action bar
         var actionBar = getSupportActionBar()

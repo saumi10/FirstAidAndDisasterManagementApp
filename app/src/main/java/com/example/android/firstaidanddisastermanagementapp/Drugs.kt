@@ -8,7 +8,7 @@ class Drugs : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drugs)
 
-        getSupportActionBar()?.setTitle("");
+        getSupportActionBar()?.setTitle("Drugs");
 
         // calling the action bar
         var actionBar = getSupportActionBar()

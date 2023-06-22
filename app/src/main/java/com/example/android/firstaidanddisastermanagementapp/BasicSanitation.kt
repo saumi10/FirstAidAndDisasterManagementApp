@@ -8,7 +8,7 @@ class BasicSanitation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basic_sanitation)
 
-        getSupportActionBar()?.setTitle("");
+        getSupportActionBar()?.setTitle("Basic Sanitation");
 
         // calling the action bar
         var actionBar = getSupportActionBar()

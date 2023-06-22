@@ -8,7 +8,7 @@ class FirstAid : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aid)
 
-        getSupportActionBar()?.setTitle("");
+        getSupportActionBar()?.setTitle("First Aid");
 
         // calling the action bar
         var actionBar = getSupportActionBar()
