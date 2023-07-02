@@ -135,6 +135,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
+                <Button
+                    android:id="@+id/buttonCPR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" >
+                </Button>
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -244,7 +251,7 @@
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:gravity="center"
-                        android:text="SIEZURE?"
+                        android:text="SEIZURE"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toBottomOf="parent"

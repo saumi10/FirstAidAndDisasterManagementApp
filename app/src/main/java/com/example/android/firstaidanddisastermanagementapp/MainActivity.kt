@@ -1,6 +1,7 @@
 package com.example.android.firstaidanddisastermanagementapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
@@ -73,6 +74,35 @@ class MainActivity : AppCompatActivity() {
             val Intent= Intent(this,Tb::class.java)
             startActivity(Intent)
         }
+
+        //Social media redirecting buttons
+
+            //instagram
+        val buttonInstagram=findViewById<Button>(R.id.buttonInsta)
+        buttonInstagram.setOnClickListener{
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/ircskarnataka/?hl=en"))
+            startActivity(i)
+        }
+
+            //facebook
+        val buttonFacebook=findViewById<Button>(R.id.buttonFacebook)
+        buttonFacebook.setOnClickListener{
+            val j = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/ircskarnataka/"))
+            startActivity(j)
+        }
+
+            //twitter
+        val buttonTwitter=findViewById<Button>(R.id.buttonTwitter)
+        buttonTwitter.setOnClickListener{
+            val k = Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/ircskarnataka?lang=en"))
+            startActivity(k)
+        }
+
+
+
+
+
+
 
 
 

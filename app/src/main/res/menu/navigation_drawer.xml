@@ -15,6 +15,10 @@
             android:id="@+id/bottomInfo"
             android:icon="@drawable/ic_baseline_info_24" />
 
+        <item android:title="@string/website"
+            android:id="@+id/website"
+            android:icon="@drawable/ic_baseline_public_24" />
+
 
 
     </group>
