@@ -17,7 +17,6 @@
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         android:background="@color/shadow"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/webView"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -67,42 +66,39 @@
 
                     </ImageView>
 
-
                     <TextView
                         android:id="@+id/textView1"
-                        android:layout_width="318dp"
-                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="WHAT IS CPR ?"
-                        android:gravity="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView2"
+                        app:layout_constraintBottom_toTopOf="@+id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@id/imageNumber1"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0">
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="@+id/imageNumber1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView1"
+                        app:layout_constraintVertical_bias="0.49">
 
                     </TextView>
 
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="318dp"
-                        android:layout_height="166dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
                         android:text="CPR: Cardiopulmonary Resuscitation is an emergency lifesaving procedure performed when the heart stops beating. Immediate CPR can double or triple chances of survival after cardiac arrest."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.698"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.773">
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent">
 
                     </TextView>
 
@@ -110,10 +106,286 @@
                         android:id="@+id/webView"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
+                        app:layout_constraintBottom_toTopOf="@id/imageView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView1"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="770dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/imageView3"
+                        app:layout_constraintTop_toBottomOf="@id/webView"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageNumber2"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/numbertwonew"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+                        app:layout_constraintTop_toBottomOf="@+id/webView"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="HOW TO PERFORM CPR ?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/webView">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="Step 1.Call an Ambulance (Dial 108)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="Step 2.Place the person on their back and open their airway"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Place the person carefully on their back and kneel beside their chest. Tilt their head back slightly by lifting their chin.
+
+Open their mouth and check for any obstruction, such as food or vomit. Remove any obstruction if it is loose. If it is not loose, trying to grasp it may push it farther into the airway."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="Step 3.Check for breathing"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="Place your ear next the person’s mouth and listen for no more than 10 seconds. If you do not hear breathing, or you only hear occasional gasps, begin CPR.
+
+If someone is unconscious but still breathing, do not perform CPR. Instead, if they do not seem to have a spinal injury, place them in the recovery position. Keep monitoring their breathing and perform CPR if they stop breathing."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="550dp"
+                        android:src="@drawable/cprstepsnew"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/imageView4"
+                        app:layout_constraintTop_toBottomOf="@id/imageView2"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="630dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/imageView5"
+                        app:layout_constraintTop_toBottomOf="@id/imageView3"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="Step 4.Perform 30 chest compressions"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView4">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Place one of your hands on top of the other and clasp them together. With the heel of the hands and straight elbows, push hard and fast in the center of the chest, slightly below the nipples.
+
+Push at least 2 inches deep. Compress their chest at a rate of least 100 times per minute. Let the chest rise fully between compressions."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        android:text="Step 5.Perform two rescue breaths"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="Making sure their mouth is clear, tilt their head back slightly and lift their chin. Pinch their nose shut, place your mouth fully over theirs, and blow to make their chest rise.
+
+If their chest does not rise with the first breath, retilt their head. If their chest still does not rise with a second breath, the person might be choking."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/chestcompressions"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/imageView6"
+                        app:layout_constraintTop_toBottomOf="@id/imageView4"
+                        tools:layout_editor_absoluteX="16dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/rescuebreaths"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/webView2"
+                        app:layout_constraintTop_toBottomOf="@id/imageView5"
+                        tools:layout_editor_absoluteX="16dp">
+                    </ImageView>
+
+                    <WebView
+                        android:id="@+id/webView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView6"
+                        app:layout_constraintVertical_bias="1.0" />
 
 
 

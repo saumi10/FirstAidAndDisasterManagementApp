@@ -16,6 +16,7 @@ import androidx.annotation.RequiresApi
 class CPR : AppCompatActivity() {
 
     private lateinit var webView1: WebView
+    private lateinit var webView2: WebView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +45,20 @@ class CPR : AppCompatActivity() {
             "utf-8"
         )
 
+        webView2 = findViewById(R.id.webView2)
+        webView2.settings.javaScriptEnabled = true
+        webView2.webViewClient = WebViewClient()
+
+
+        val videoId2 = "6eRwgM2Pa4o"
+        val videoUrl2 = "https://www.youtube.com/embed/$videoId2"
+
+        webView2.loadData(
+            "<iframe width=\"100%\" height=\"100%\" src=\"$videoUrl2\" frameborder=\"0\" allowfullscreen></iframe>",
+            "text/html",
+            "utf-8"
+        )
+
 
     }
 
@@ -63,8 +78,15 @@ class CPR : AppCompatActivity() {
     override fun onBackPressed() {
         if (webView1.canGoBack()) {
             webView1.goBack()
-        } else {
+        }
+        if (webView2.canGoBack()) {
+            webView2.goBack()
+        }
+
+        else {
             super.onBackPressed()
         }
     }
+
+
 }
