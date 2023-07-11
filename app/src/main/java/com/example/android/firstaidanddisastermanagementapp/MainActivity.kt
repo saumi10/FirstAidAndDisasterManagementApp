@@ -9,11 +9,14 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var drawerLayout: DrawerLayout
     lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,17 +101,121 @@ class MainActivity : AppCompatActivity() {
             startActivity(k)
         }
 
+        //bottom navigation bar functionality code
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.bottomInfo -> {
+                    // Handle click for item 1
+                    val bottominfobutton = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/history-of-ircs/"))
+                    startActivity(bottominfobutton)
+                    true
+                }
+
+                R.id.bottomHelpline -> {
+                    // Handle click for "Helpline" item
+                    dialPhoneNumber("8022268435")
+                    true
+                }
+
+                else -> false
+            }
+        }
+
+        //top navigation drawer  menu items functionality code
+        val navigationView = findViewById<NavigationView>(R.id.navigationView)
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.website -> {
+                    val sideDrawerWebsite = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/"))
+                    startActivity(sideDrawerWebsite)
+
+                    true
+                }
+                R.id.becomeABloodDonor -> {
+                    val sideDrawerBloodDonor = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/become-a-blood-donor/"))
+                    startActivity(sideDrawerBloodDonor)
+
+                    true
+                }
+
+                R.id.contactUs -> {
+                    val sideDrawerContactUs = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/contact-us/"))
+                    startActivity(sideDrawerContactUs)
+
+                    true
+                }
+
+                R.id.firstaidregistration -> {
+                    val sideDrawerfirstAidRegistration = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/first-aid-training/"))
+                    startActivity(sideDrawerfirstAidRegistration)
+
+                    true
+                }
+                R.id.schoolRegistration-> {
+                    val sideDrawerschoolRegn = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/application/public/"))
+                    startActivity(sideDrawerschoolRegn)
+
+                    true
+                }
+                R.id.puCollegeRegistration-> {
+                    val sideDrawerpuCollegeRegn = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/application/public/college-registration-form"))
+                    startActivity(sideDrawerpuCollegeRegn)
+
+                    true
+                }
+
+                R.id.chatWithUs-> {
+                    val sideDrawerchat = Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=919353743508&text=Hi,%20I%20contacted%20you%20through%20your%20app."))
+                    startActivity(sideDrawerchat)
+
+                    true
+                }
+
+                R.id.jrc-> {
+                    val sideDrawerjrc = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/junior-red-cross/"))
+                    startActivity(sideDrawerjrc)
+
+                    true
+                }
+
+                R.id.yrc-> {
+                    val sideDraweryrc = Intent(Intent.ACTION_VIEW, Uri.parse("https://redcrosskarnataka.org/youth-red-cross/"))
+                    startActivity(sideDraweryrc)
+
+                    true
+                }
 
 
 
 
-
-
-
+                else -> false
+            }
+        }
 
 
 
     }
+//phone intent
+    private fun dialPhoneNumber(phoneNumber: String) {
+        val intent = Intent(Intent.ACTION_DIAL).apply {
+            data = Uri.parse("tel:$phoneNumber")
+        }
+        startActivity(intent)
+    }
+
+//when app is resumed after redirecting to web pages
+    override fun onResume() {
+        super.onResume()
+        // Set the home menu item as selected
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.menu.findItem(R.id.bottomHome).isChecked = true
+
+        val navigationView = findViewById<NavigationView>(R.id.navigationView)
+        navigationView.menu.findItem(R.id.sideHome).isChecked = true
+    }
+
 
 
     // override the onOptionsItemSelected()
@@ -116,6 +223,7 @@ class MainActivity : AppCompatActivity() {
     // the item click listener callback
     // to open and close the navigation
     // drawer when the icon is clicked
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             true

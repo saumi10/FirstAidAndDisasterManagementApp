@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CPR">
-
+    tools:context=".splints">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutMain"
@@ -40,7 +39,7 @@
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"
+                        android:layout_height="670dp"
                         android:background="@color/shadow"
                         app:layout_constraintBottom_toTopOf="@id/webView"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -71,17 +70,15 @@
                         android:id="@+id/textView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="WHAT IS CPR ?"
+                        android:layout_marginTop="16dp"
+                        android:text="WHAT IS A SPLINT?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@+id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="@+id/imageNumber1"
-                        app:layout_constraintTop_toTopOf="@+id/imageView1"
-                        app:layout_constraintVertical_bias="0.49">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView1">
 
                     </TextView>
 
@@ -89,17 +86,21 @@
                         android:id="@+id/textView2"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="CPR: Cardiopulmonary Resuscitation is an emergency lifesaving procedure performed when the heart stops beating. Immediate CPR can double or triple chances of survival after cardiac arrest."
+                        android:text="A splint is a supportive device used to keep in place any suspected fracture in one’s arm or leg.\n\nSplint is used to:\n
+■Provide pain relief of the fractured limb.\n
+■Support bone ends of the fracture site. Bones ends of the fracture site are very sharp. A splint helps prevent bone protruding through the skin, soft skin and tissue damage, as well as bleeding.\n
+■Facilitate safe and seamless causality transport.\n\nTypes of Splints:\n
+■Rigid Splint: Any rigid object, such as wood or plastic boards, broomstick, book or a rolled-out newspapers, which can be used to splint a fractured arm or leg.\n
+■Flexible Splint: Any flexible object, like a pillow or a bed sheet with several folds. This type is used for foot, ankle and joint fractures."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
-                        app:layout_constraintStart_toStartOf="parent">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     </TextView>
 
@@ -117,7 +118,7 @@
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="match_parent"
-                        android:layout_height="770dp"
+                        android:layout_height="850dp"
                         android:background="@color/shadow"
                         app:layout_constraintBottom_toTopOf="@id/imageView3"
                         app:layout_constraintTop_toBottomOf="@id/webView"
@@ -145,9 +146,9 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="22dp"
                         android:paddingStart="5dp"
-                        android:text="HOW TO PERFORM CPR ?"
+                        android:text="HOW TO APPLY SPLINT?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
@@ -165,8 +166,7 @@
                         android:layout_marginTop="24dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:textStyle="bold"
-                        android:text="Step 1.Call an Ambulance (Dial 108)"
+                        android:text="Here are some general principles to be applied when splinting as follows:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         app:fontFamily="serif"
@@ -184,10 +184,9 @@
                         android:layout_marginTop="20dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:textStyle="bold"
-                        android:text="Step 2.Place the person on their back and open their airway"
+                        android:text="■Identify the fracture site."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.493"
@@ -203,9 +202,7 @@
                         android:layout_marginTop="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Place the person carefully on their back and kneel beside their chest. Tilt their head back slightly by lifting their chin.
-
-Open their mouth and check for any obstruction, such as food or vomit. Remove any obstruction if it is loose. If it is not loose, trying to grasp it may push it farther into the airway."
+                        android:text="■Stop the bleeding using bandages, but avoid pressing on the fractured painful and deformed site."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
@@ -220,13 +217,12 @@ Open their mouth and check for any obstruction, such as food or vomit. Remove an
                         android:id="@+id/textView7"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:textStyle="bold"
-                        android:text="Step 3.Check for breathing"
+                        android:text="■In case of bone fractures where bone ends protrude through the skin, do not push these ends back in place as this will cause inflammation and acute bleeding."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.493"
@@ -242,9 +238,11 @@ Open their mouth and check for any obstruction, such as food or vomit. Remove an
                         android:layout_marginTop="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="20dp"
-                        android:text="Place your ear next to the person’s mouth and listen for no more than 10 seconds. If you do not hear breathing, or you only hear occasional gasps, begin CPR.
-
-If someone is unconscious but still breathing, do not perform CPR. Instead, if they do not seem to have a spinal injury, place them in the recovery position. Keep monitoring their breathing and perform CPR if they stop breathing."
+                        android:text="■Keep the fractured bone (including the joints above and below the fracture site) motionless as indicated hereunder:\n
+1. If the lower-arm is fractured, keep the wrist and elbow joints motionless.\n
+2. If the upper-arm is fractured, keep the shoulder and elbow joints motionless.\n
+3. If the lower-leg is fractured, keep the knee and ankle joints motionless.\n
+4. If the upper-leg is fractured, keep the knee and femoral joints motionless.\n"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
@@ -252,16 +250,17 @@ If someone is unconscious but still breathing, do not perform CPR. Instead, if t
                         app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView7">
+
                     </TextView>
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
-                        android:layout_height="550dp"
-                        android:src="@drawable/cprstepsnew"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_height="330dp"
+                        android:src="@drawable/splintsone"
                         app:layout_constraintBottom_toTopOf="@id/imageView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/imageView2"
                         tools:layout_editor_absoluteX="16dp">
 
@@ -270,7 +269,7 @@ If someone is unconscious but still breathing, do not perform CPR. Instead, if t
                     <ImageView
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
-                        android:layout_height="640dp"
+                        android:layout_height="300dp"
                         android:background="@color/shadow"
                         app:layout_constraintBottom_toTopOf="@id/imageView5"
                         app:layout_constraintTop_toBottomOf="@id/imageView3"
@@ -286,10 +285,9 @@ If someone is unconscious but still breathing, do not perform CPR. Instead, if t
                         android:layout_marginTop="20dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:textStyle="bold"
-                        android:text="Step 4.Perform 30 chest compressions"
+                        android:text="■If the fractured limb is bent with a sharp bone end protruding through the skin, keep it motionless. Splint a limb as you find it to make it as comfortable to the patient as you possible."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.493"
@@ -305,9 +303,7 @@ If someone is unconscious but still breathing, do not perform CPR. Instead, if t
                         android:layout_marginTop="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Place one of your hands on top of the other and clasp them together. With the heel of the hands and straight elbows, push hard and fast in the center of the chest, slightly below the nipples.
-
-Push at least 2 inches deep. Compress their chest at a rate of least 100 times per minute. Let the chest rise fully between compressions."
+                        android:text="■If an ambulance is called and is on its way, do not splint the fractured limb and wait for the ambulance team to use their specialized medical splints."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
@@ -315,69 +311,21 @@ Push at least 2 inches deep. Compress their chest at a rate of least 100 times p
                         app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView9">
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:textStyle="bold"
-                        android:text="Step 5.Perform two rescue breaths"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        app:fontFamily="serif"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10">
 
                     </TextView>
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="20dp"
-                        android:text="Making sure their mouth is clear, tilt their head back slightly and lift their chin. Pinch their nose shut, place your mouth fully over theirs, and blow to make their chest rise.
-
-If their chest does not rise with the first breath, retilt their head. If their chest still does not rise with a second breath, the person might be choking.
-Repeat above steps till an ambulance arrives."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
-                        app:fontFamily="serif"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView11">
-                    </TextView>
 
                     <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:src="@drawable/chestcompressions"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_height="450dp"
+                        android:src="@drawable/splintstwo"
+                        app:layout_constraintBottom_toTopOf="@id/webView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toTopOf="@id/imageView6"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/imageView4"
                         tools:layout_editor_absoluteX="16dp">
-                    </ImageView>
 
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:src="@drawable/rescuebreaths"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toTopOf="@id/webView2"
-                        app:layout_constraintTop_toBottomOf="@id/imageView5"
-                        tools:layout_editor_absoluteX="16dp">
                     </ImageView>
 
                     <WebView
@@ -388,10 +336,8 @@ Repeat above steps till an ambulance arrives."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView6"
+                        app:layout_constraintTop_toBottomOf="@id/imageView5"
                         app:layout_constraintVertical_bias="1.0" />
-
-
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -402,6 +348,6 @@ Repeat above steps till an ambulance arrives."
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

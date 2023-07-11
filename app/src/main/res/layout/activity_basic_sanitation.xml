@@ -6,176 +6,446 @@
     android:layout_height="match_parent"
     tools:context=".BasicSanitation">
 
-
-    <ScrollView
-        android:id="@+id/scrollView"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+
+        <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
+            <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintBottom_toTopOf="@id/cardView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="THE FIVE STEPS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageViewHW1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewHW1"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:paddingRight="20dp"
-                        android:src="@drawable/five"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
 
-                    <TextView
-                        android:layout_width="170dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="WHY"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageViewHW2"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
                     <ImageView
-                        android:id="@+id/imageViewHW2"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:paddingLeft="20dp"
-                        android:src="@drawable/why"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView3"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="170dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="WHEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageViewHW3"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewHW3"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:layout_marginEnd="28dp"
-                        android:paddingLeft="20dp"
-                        android:src="@drawable/clock"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/webView"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
 
+
+                    <ImageView
+                        android:id="@+id/imageNumber1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/numberonenew"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WHY ?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@+id/textView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="@+id/imageNumber1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView1"
+                        app:layout_constraintVertical_bias="0.49">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="A number of infectious diseases can be spread from one person to another by contaminated hands.These diseases include gastrointestinal infections, such as salmonellosis, and respiratory infections, such as influenza, colds and coronavirus (COVID-19).Washing your hands properly with soap and water can help prevent the spread of the germs (like bacteria and viruses) that cause these diseases.
+Some forms of gastrointestinal and respiratory infections can cause serious complications, especially for young children, the elderly, or those with a weakened immune system."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </TextView>
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toTopOf="@id/imageView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView1"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="640dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/imageView3"
+                        app:layout_constraintTop_toBottomOf="@id/webView"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageNumber2"
+                        android:layout_width="49dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/numbertwonew"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/webView"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:paddingStart="5dp"
+                        android:text="HOW ?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/webView">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 1.WET HANDS WITH WARM WATER"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 2.APPLY SOAP AND WASH HANDS
+FOR AT LEAST 15 SECONDS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Rub hands vigorously, covering all surfaces of the hands,
+giving added attention to fingernails. Use liquid soap and warm running water.Scrub nails by rubbing them against the palms. Lather the backs of your hands, between your fingers, and under your nails.
+Scrub your hands for at least 20 seconds."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 3.RINSE HANDS WITH WATER"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="Rinse your hands well under clean, running water.Make sure all traces of soap are removed."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="530dp"
+                        android:src="@drawable/handwashsteps"
+                        app:layout_constraintBottom_toTopOf="@id/imageView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView2"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/imageView5"
+                        app:layout_constraintTop_toBottomOf="@id/imageView3"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 4.DRY HANDS THOROUGHLY WITH A PAPER TOWEL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView4">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Dry your hands using a clean towel or air dry them.
+It is best to use paper towels (or single-use cloth towel).
+Dry under any rings, as they can be a source of future contamination if they remain moist.
+Hot air driers can be used."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 5.TURN OFF FAUCET USING THE PAPER TOWEL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    </TextView>
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="530dp"
+                        android:src="@drawable/handwashing"
+                        app:layout_constraintBottom_toTopOf="@id/webView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView4"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <WebView
+                        android:id="@+id/webView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toTopOf="@id/imageView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView5"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="560dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/webView2"
+                        tools:layout_editor_absoluteX="16dp">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imageNumber3"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/numberthreenew"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.864">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="WHEN ?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/webView2">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="You should wash your hands thoroughly:\n
+■after using the toilet\n
+■after changing nappies\n
+■before, during and after preparing food\n
+■between handling raw and cooked or ready-to-eat food\n
+■before eating\n
+■after blowing your nose, coughing or sneezing\n
+■after using a tissue or handkerchief\n
+■before and after attending to sick children or other family members\n
+■after smoking\n
+■after handling rubbish or working in the garden\n
+■after handling animals\n
+■when you get home, arrive at other people’s homes, at venues or at work."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                    </TextView>
+
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
 
-        </LinearLayout>
-    </ScrollView>
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

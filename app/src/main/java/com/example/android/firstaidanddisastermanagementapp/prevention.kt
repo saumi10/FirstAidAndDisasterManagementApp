@@ -6,17 +6,16 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class BasicSanitation : AppCompatActivity() {
+class prevention : AppCompatActivity() {
 
     private lateinit var webView1: WebView
-    private lateinit var webView2: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic_sanitation)
+        setContentView(R.layout.activity_prevention)
 
-        getSupportActionBar()?.setTitle("Basic Sanitation");
-
+        //to change title of action bar of respective activity
+        getSupportActionBar()?.setTitle("TB PREVENTION");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -27,7 +26,7 @@ class BasicSanitation : AppCompatActivity() {
         webView1.webViewClient = WebViewClient()
 
 
-        val videoId = "IisgnbMfKvI"
+        val videoId = "lkpKCEio_CM"
         val videoUrl = "https://www.youtube.com/embed/$videoId"
 
         webView1.loadData(
@@ -35,26 +34,7 @@ class BasicSanitation : AppCompatActivity() {
             "text/html",
             "utf-8"
         )
-
-        webView2 = findViewById(R.id.webView2)
-        webView2.settings.javaScriptEnabled = true
-        webView2.webViewClient = WebViewClient()
-
-
-        val videoId2 = "kpgxMA5St0g"
-        val videoUrl2 = "https://www.youtube.com/embed/$videoId2"
-
-        webView2.loadData(
-            "<iframe width=\"100%\" height=\"100%\" src=\"$videoUrl2\" frameborder=\"0\" allowfullscreen></iframe>",
-            "text/html",
-            "utf-8"
-        )
-
-
     }
-
-
-
     //function to make back button work
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -64,20 +44,14 @@ class BasicSanitation : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+
     }
 
     override fun onBackPressed() {
         if (webView1.canGoBack()) {
             webView1.goBack()
-        }
-        if (webView2.canGoBack()) {
-            webView2.goBack()
-        }
-
-        else {
+        } else {
             super.onBackPressed()
         }
     }
-
-
 }

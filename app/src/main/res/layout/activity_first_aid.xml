@@ -202,7 +202,7 @@
                         android:layout_width="170dp"
                         android:layout_height="160dp"
                         android:gravity="center"
-                        android:text="SPLINTS/SLINGS"
+                        android:text="SPLINTS"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -223,6 +223,12 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+                    <Button
+                        android:id="@+id/buttonSplints"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -320,6 +326,13 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonShock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

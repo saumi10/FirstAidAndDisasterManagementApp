@@ -6,17 +6,16 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class BasicSanitation : AppCompatActivity() {
+class splints : AppCompatActivity() {
 
     private lateinit var webView1: WebView
     private lateinit var webView2: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic_sanitation)
-
-        getSupportActionBar()?.setTitle("Basic Sanitation");
-
+        setContentView(R.layout.activity_splints)
+        //to change title of action bar of respective activity
+        getSupportActionBar()?.setTitle("SPLINTS");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -27,7 +26,7 @@ class BasicSanitation : AppCompatActivity() {
         webView1.webViewClient = WebViewClient()
 
 
-        val videoId = "IisgnbMfKvI"
+        val videoId = "2v8vlXgGXwE"
         val videoUrl = "https://www.youtube.com/embed/$videoId"
 
         webView1.loadData(
@@ -41,7 +40,7 @@ class BasicSanitation : AppCompatActivity() {
         webView2.webViewClient = WebViewClient()
 
 
-        val videoId2 = "kpgxMA5St0g"
+        val videoId2 = "s6PZj2mGqbs"
         val videoUrl2 = "https://www.youtube.com/embed/$videoId2"
 
         webView2.loadData(
@@ -54,7 +53,6 @@ class BasicSanitation : AppCompatActivity() {
     }
 
 
-
     //function to make back button work
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -64,6 +62,7 @@ class BasicSanitation : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+
     }
 
     override fun onBackPressed() {
@@ -72,12 +71,8 @@ class BasicSanitation : AppCompatActivity() {
         }
         if (webView2.canGoBack()) {
             webView2.goBack()
-        }
-
-        else {
+        } else {
             super.onBackPressed()
         }
     }
-
-
 }

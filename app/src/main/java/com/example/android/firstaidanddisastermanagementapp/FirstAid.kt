@@ -28,6 +28,20 @@ class FirstAid : AppCompatActivity() {
             startActivity(Intent)
         }
 
+        //switching to shock activity
+        val buttonShock=findViewById<Button>(R.id.buttonShock)
+        buttonShock.setOnClickListener{
+            val Intent= Intent(this,shock::class.java)
+            startActivity(Intent)
+        }
+
+        //switching to splints activity
+        val buttonSplint=findViewById<Button>(R.id.buttonSplints)
+        buttonSplint.setOnClickListener{
+            val Intent= Intent(this,splints::class.java)
+            startActivity(Intent)
+        }
+
 
 
 

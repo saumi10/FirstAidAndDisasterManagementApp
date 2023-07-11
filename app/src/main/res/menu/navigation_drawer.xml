@@ -8,16 +8,48 @@
         android:checkableBehavior="single">
 
         <item android:title="@string/home"
-            android:id="@+id/bottomHome"
+            android:id="@+id/sideHome"
             android:icon="@drawable/ic_baseline_home_24" />
 
-        <item android:title="@string/about_us"
-            android:id="@+id/bottomInfo"
-            android:icon="@drawable/ic_baseline_info_24" />
 
         <item android:title="@string/website"
             android:id="@+id/website"
             android:icon="@drawable/ic_baseline_public_24" />
+
+        <item android:title="Contact Us"
+            android:id="@+id/contactUs"
+            android:icon="@drawable/ic_baseline_local_phone_24" />
+
+        <item android:title="Become a Blood Donor"
+            android:id="@+id/becomeABloodDonor"
+            android:icon="@drawable/ic_blooddonation" />
+
+        <item android:title="Junior Red Cross"
+            android:id="@+id/jrc"
+            android:icon="@drawable/ic_redcross" />
+
+        <item android:title="Youth Red Cross"
+            android:id="@+id/yrc"
+            android:icon="@drawable/ic_yrcimg" />
+
+
+        <item android:title="Registration: First Aid Training"
+            android:id="@+id/firstaidregistration"
+            android:icon="@drawable/firstaidkit" />
+
+        <item android:title="School Registration"
+            android:id="@+id/schoolRegistration"
+            android:icon="@drawable/ic_baseline_app_registration_24" />
+
+        <item android:title="PU College Registration"
+            android:id="@+id/puCollegeRegistration"
+            android:icon="@drawable/ic_baseline_app_registration_24" />
+
+        <item android:title="Chat With Us"
+            android:id="@+id/chatWithUs"
+            android:icon="@drawable/ic_baseline_chat_bubble_24" />
+
+
 
 
 
