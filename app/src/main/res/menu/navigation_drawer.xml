@@ -45,9 +45,14 @@
             android:id="@+id/puCollegeRegistration"
             android:icon="@drawable/ic_baseline_app_registration_24" />
 
+
         <item android:title="Chat With Us"
             android:id="@+id/chatWithUs"
             android:icon="@drawable/ic_baseline_chat_bubble_24" />
+
+        <item android:title="Location"
+            android:id="@+id/location"
+            android:icon="@drawable/ic_baseline_location_on_24" />
 
 
 

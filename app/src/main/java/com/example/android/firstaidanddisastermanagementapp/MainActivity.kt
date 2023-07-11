@@ -187,6 +187,13 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
 
+                R.id.location-> {
+                    val sideDrawerLocation = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/place/Indian+Red+Cross+Society,+Karnataka+State+Branch/@12.9841986,77.5789552,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1616a5b28f6d:0xbfa21ee6eecd669f!8m2!3d12.9841986!4d77.5789552!16s%2Fg%2F1v4k4z6d?entry=ttu"))
+                    startActivity(sideDrawerLocation)
+
+                    true
+                }
+
 
 
 
