@@ -9,7 +9,7 @@ class TreatmentAids : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_treatment_aids)
         //to change title of action bar of respective activity
-        getSupportActionBar()?.setTitle("TREATMENT FOR TB");
+        getSupportActionBar()?.setTitle("TREATMENT FOR AIDS");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
