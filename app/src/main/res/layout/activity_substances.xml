@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".substances">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/shadow">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1200dp"
+                    android:background="@color/shadow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="People use cannabis by smoking, eating or inhaling a vaporized form of the drug. Cannabis often precedes or is used along with other substances, such as alcohol or illegal drugs, and is often the first drug tried."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="Marijuana, hashish and other cannabis containing Substances"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView1">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="K2, Spice and bath salts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView2">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="350dp"
+                    android:layout_height="440dp"
+                    android:gravity="left"
+                    android:text="Two groups of synthetic drugs — synthetic cannabinoids and substituted or synthetic cathinones — are illegal in most states. The effects of these drugs can be dangerous and unpredictable, as there is no quality control and some ingredients may not be known.
+
+Synthetic cannabinoids, also called K2 or Spice, are sprayed on dried herbs and then smoked, but can be prepared as an herbal tea. A liquid form can be vaporized in electronic cigarettes. Despite manufacturer claims, these are chemical compounds rather than natural or harmless products. These drugs can produce a high similar to marijuana and have become a popular but dangerous alternative."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView4"
+                    app:layout_constraintVertical_bias="0.151">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="Barbiturates, benzodiazepines and hypnotics"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView5">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="350dp"
+                    android:layout_height="400dp"
+                    android:gravity="left"
+                    android:text="Barbiturates, benzodiazepines and hypnotics are prescription central nervous system depressants. They're often used and misused in search for a sense of relaxation or a desire to switch off or forget stress-related thoughts or feelings.
+Barbiturates. An example is phenobarbital.
+Benzodiazepines. Examples include sedatives, such as diazepam (Valium), alprazolam (Xanax), lorazepam (Ativan), clonazepam (Klonopin) and chlordiazepoxide (Librium).
+Hypnotics. Examples include prescription sleeping medicines such as zolpidem (Ambien) and zaleplon (Sonata)."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView6"
+                    app:layout_constraintVertical_bias="0.151">
+                </TextView>
+
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toTopOf="@id/textView8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="Club Drugs"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/webView1"
+                    app:layout_constraintVertical_bias="0.151">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Club drugs are commonly used at clubs, concerts and parties. Examples include methylenedioxymethamphetamine, also called MDMA, ecstasy or molly, and gamma-hydroxybutyric acid, known as GHB. Other examples include ketamine and flunitrazepam or Rohypnol — a brand used outside the U.S. — also called roofie. These drugs are not all in the same category, but they share some similar effects and dangers, including long-term harmful effects.
+Because GHB and flunitrazepam can cause sedation, muscle relaxation, confusion and memory loss, the potential for sexual misconduct or sexual assault is associated with the use of these drugs"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView10"
+                    app:layout_constraintVertical_bias="0.151">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:text="Hallucinogens"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    android:paddingTop="15dp"
+                    app:layout_constraintBottom_toTopOf="@id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView10"
+                    app:layout_constraintVertical_bias="0.151">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="30dp"
+                    android:text="Use of hallucinogens can produce different signs and symptoms, depending on the drug. The most common hallucinogens are lysergic acid diethylamide (LSD) and phencyclidine (PCP)."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView14"></TextView>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="Inhalants"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView11"
+                    app:layout_constraintVertical_bias="0.151">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingStart="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="30dp"
+                    android:text="Signs and symptoms of inhalant use vary, depending on the substance. Some commonly inhaled substances include glue, paint thinners, correction fluid, felt tip marker fluid, gasoline, cleaning fluids and household aerosol products. Due to the toxic nature of these substances, users may develop brain damage or sudden death."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/imageNumber7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+                <ImageView
+                    android:id="@+id/imageNumber7"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/numberonenew"
+                    app:layout_constraintBottom_toTopOf="@id/textView13"
+                    app:layout_constraintEnd_toStartOf="@id/textView8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView12"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="Opioid painkillers"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView12"
+                    app:layout_constraintVertical_bias="0.151">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Opioids are narcotic, painkilling drugs produced from opium or made synthetically. This class of drugs includes, among others, heroin, morphine, codeine, methadone, fentanyl and oxycodone.
+
+Sometimes called the opioid epidemic addiction to opioid prescription pain medicines has reached an alarming rate across the United States. Some people who've been using opioids over a long period of time may need physician-prescribed temporary or long-term drug substitution during treatment."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    app:fontFamily="serif"
+                    app:layout_constraintBottom_toTopOf="@id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageNumber7"
+                    app:layout_constraintVertical_bias="0.151">
+                </TextView>
+
+                <WebView
+                    android:id="@+id/webView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView13"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

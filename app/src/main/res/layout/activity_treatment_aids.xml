@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".treatment">
-
-
+    tools:context=".TreatmentAids">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutMain"
@@ -41,29 +39,32 @@
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="match_parent"
-                        android:layout_height="1090dp"
+                        android:layout_height="1190dp"
                         android:background="@color/shadow"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
 
+
                     <ImageView
                         android:id="@+id/imageNumber1"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:src="@drawable/numberonenew"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="@id/imageView1"
+                        app:layout_constraintVertical_bias="0.011">
 
                     </ImageView>
+
 
                     <TextView
                         android:id="@+id/textView1"
@@ -71,18 +72,17 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="16dp"
                         android:gravity="center"
-                        android:text="TREATMENT"
+                        android:text="HOW IS HIV TRANSMITTED?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintHorizontal_bias="0.612"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="@+id/imageView1">
 
                     </TextView>
-
 
                     <TextView
                         android:id="@+id/textView2"
@@ -91,29 +91,44 @@
                         android:layout_marginTop="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Drugs may be prescribed for latent TB. HIV/AIDS and other risk factors that increase the risk for active TB make this especially true. Most latent TB infections are treated for 3–4 months."
+                        android:text="HIV, like other viruses, is contagious. However, AIDS is only contracted after HIV infection. Fluids spread the infection. HIV is usually spread through sex without condoms or needles. A pregnant mother can spread the disease to her child."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.505"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     </TextView>
 
+                    <ImageView
+                        android:id="@+id/imageNumber2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/numbertwonew"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintEnd_toStartOf="@id/textView3"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/textView2"
+                        app:layout_constraintVertical_bias="0.199">
+
+                    </ImageView>
+
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Active TB treatment lasts four, six, or nine months. TB experts will recommend medications."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="28dp"
+                        android:gravity="center"
+                        android:text="THE UNPREDICTABILITY OF HIV SYMPTOMS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintHorizontal_bias="0.612"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -123,66 +138,34 @@
                         android:id="@+id/textView4"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Regular consultations will monitor your progress and side effects."
+                        android:text="HIV induces flu-like symptoms two to four weeks after transmission. This is an acute infection. Acute HIV may be asymptomatic or misdiagnosed as another viral infection. The immune system controls the infection, causing latency."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintHorizontal_bias="0.505"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
                     </TextView>
 
-                    <ImageView
-                        android:id="@+id/imageNumber2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="320dp"
-                        android:src="@drawable/numbertwonew"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageNumber1">
-
-                    </ImageView>
-
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="318dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="28dp"
-                        android:gravity="center"
-                        android:text="TB DRUGS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        app:fontFamily="serif"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.464"
-                        app:layout_constraintStart_toStartOf="@+id/imageNumber2"
-                        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Latent TB patients may only need one or two medications. Active TB requires multiple drugs. Anti-tuberculosis medicines include Isoniazid,Rifampin,Rifabutin,Rifapentine,Pyrazinamide and Ethambutol."
+                        android:text="HIV cannot be eliminated, but the immune system can regulate it. HIV patients may have no symptoms throughout this latency period, which might extend years. However, without antiretroviral therapy, that person may get AIDS and suffer various symptoms."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     </TextView>
 
@@ -190,28 +173,46 @@
                         android:id="@+id/imageNumber3"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:layout_marginTop="192dp"
                         android:src="@drawable/numberthreenew"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintEnd_toStartOf="@id/textView6"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageNumber2">
+                        app:layout_constraintTop_toTopOf="@id/textView2"
+                        app:layout_constraintVertical_bias="0.614">
 
                     </ImageView>
 
                     <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="310dp"
+                        android:id="@+id/textView6"
+                        android:layout_width="318dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
-                        android:text="MEDICATION SIDE EFFECTS"
+                        android:text="TREATMENT"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Life expectancy reduces considerably with stage 3 HIV. The immune system is damaged and hard to restore. Severe immune system weakness often causes infections and other diseases, including cancer. With successful antiretroviral treatment and immune system recovery, many stage 3 HIV patients live long lives."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.505"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
@@ -221,35 +222,19 @@
                         android:id="@+id/textView8"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="18dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Most people can take TB drugs without serious side effects. Your doctor may recommend stopping a medicine if you suffer significant adverse effects. Drug doses may need to be adjusted."
+                        android:text="Today's treatment for HIV can prevent AIDS. Successful antiretroviral treatment and an undetectable viral load prevent transmission to a partner."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.546"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
                     </TextView>
 
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Consult your doctor if you suffer any of the following: stomachache, vomiting, appetite loss, severe diarrhoea, light-colored stool, dark urine, yellow eyes or skin, vision changes, dizziness or imbalance, tingling hands or feet, easy bruising or bleeding, unexpected weight reduction, unexpected fatigue, sadness or depression, rash, joint pain."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
-                        app:fontFamily="serif"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8">
-
-                    </TextView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -260,11 +245,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

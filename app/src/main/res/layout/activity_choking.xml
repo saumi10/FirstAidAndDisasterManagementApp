@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screening">
-
+    tools:context=".choking">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutMain"
@@ -40,28 +39,28 @@
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="match_parent"
-                        android:layout_height="1100dp"
+                        android:layout_height="630dp"
                         android:background="@color/shadow"
-                        app:layout_constraintBottom_toTopOf="@id/imageView2"
+                        app:layout_constraintBottom_toTopOf="@id/webView"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
-
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
 
+
                     <ImageView
                         android:id="@+id/imageNumber1"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:src="@drawable/numberonenew"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView1"
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
@@ -69,14 +68,16 @@
                     <TextView
                         android:id="@+id/textView1"
                         android:layout_width="318dp"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
                         android:gravity="center"
-                        android:text="WHAT IS TB SCREENING?"
+                        android:text="FOR ADULTS"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -88,11 +89,12 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="If the blockage is severe, they may be holding their chest or neck and won't be able to speak, breathe or cough, and you will need to help them."
+                        android:text="Step 1: If someone is choking, encourage them to cough."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView3"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
@@ -101,22 +103,61 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/textcontent2"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="If the blockage is severe, they may be holding their chest or neck and won't be able to speak, breathe or cough, and you will need to help them."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView2"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
+
+                    </TextView>
+
+                    <TextView
                         android:id="@+id/textView3"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Two types of conditions caused by TB germs:"
+                        android:text="Step 2: Bend them forwards and give up to 5 back blows to try and dislodge the blockage."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textcontent2"
+                        app:layout_constraintVertical_bias="0.302">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textcontent3"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Hit them firmly on their back with the heel of your hand between the shoulder blades.  "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView4"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
+                        app:layout_constraintHorizontal_bias="0.539"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView2">
+                        app:layout_constraintTop_toBottomOf="@id/textView3"
+                        app:layout_constraintVertical_bias="0.302">
 
                     </TextView>
 
@@ -126,55 +167,127 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="1. Latent TB infection"
+                        android:text="Step 3: If they are still choking, give up to 5 abdominal thrusts."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView5"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent4"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
+                        app:layout_constraintHorizontal_bias="0.539"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView3">
+                        app:layout_constraintTop_toBottomOf="@id/textcontent3">
 
                     </TextView>
+
+                    <TextView
+                        android:id="@+id/textcontent4"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Hold around the waist and pull inwards and upwards above their belly button. "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textView5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+                    </TextView>
+
 
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="48dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="It occurs when you carry TB germs but are not sick. You have no symptoms or contagiousness. However,the bacteria could spread and make you sick. To avoid active TB, latent TB infection is treated."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView6"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView4"
-                        tools:layout_editor_absoluteX="40dp"
-                        tools:layout_editor_absoluteY="50dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="2. Active TB disease"
+                        android:text="Step 4: If they are still choking call 102."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView7"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent5"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
+                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textcontent4">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textcontent5"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Repeat the steps until they can breathe again or until help arrives. "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/textView5">
+
+                    </TextView>
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toTopOf="@id/imageView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="700dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/webView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/webView">
+
+                    </ImageView>
+
+
+                    <ImageView
+                        android:id="@+id/imageNumber2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/numbertwonew"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView2"
+                        app:layout_constraintVertical_bias="0.019">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="318dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="FOR INFANTS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="@+id/imageNumber2"
+                        app:layout_constraintTop_toBottomOf="@+id/webView">
 
                     </TextView>
 
@@ -184,45 +297,75 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="It indicates that TB germs are actively causing illness in your body. Your lungs or throat might transfer TB germs. Antibiotics usually treat TB. It can kill if left untreated."
+                        android:text="Step 1: Give up to five back blows"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView6"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textcontent7"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Hold the baby face-down along your thigh with their head lower than their bottom. Hit them firmly on their back between the shoulder blades up to five times. If back blows do not dislodge the blockage, move on to step 2."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView8"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView6">
+                        app:layout_constraintTop_toBottomOf="@id/textView7"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
 
                     </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageNumber2"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="532dp"
-                        android:src="@drawable/numbertwonew"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageNumber1">
-
-                    </ImageView>
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="318dp"
-                        android:layout_height="50dp"
-                        android:gravity="center"
-                        android:text="TYPES OF TESTS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Step 2: Give up to five chest thrusts."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent8"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/imageNumber2"
-                        app:layout_constraintTop_toBottomOf="@id/textView7"
-                        tools:layout_editor_absoluteY="582dp">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textcontent7"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textcontent8"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Turn the baby over so they are facing upwards. Place two fingers in the middle of their chest just below the nipples. Push sharply downwards up to five times."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textView9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView8"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
 
                     </TextView>
 
@@ -232,164 +375,49 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="1. TB Skin Test"
+                        android:text="Step 3: Call 102 if the blockage does not dislodge."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView10"
+                        app:layout_constraintBottom_toTopOf="@id/textcontent9"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView8">
+                        app:layout_constraintTop_toBottomOf="@id/textcontent8"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
 
                     </TextView>
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textcontent9"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="First visit:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView11"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView9">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="A doctor will inject a small amount of fluid called Tuberculin into your lower arm with a tiny needle. The fluid contains TB-bacteria protein. It cannot cause illness but will cause an arm bump. The test spot will remain uncovered."
+                        android:text="Continue with cycles of back blows and chest thrusts until the blockage dislodges, help arrives or the baby becomes unresponsive. If you can’t call 102, get someone else to do it."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView12"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView10">
+                        app:layout_constraintTop_toBottomOf="@id/textView9"
+                        tools:layout_editor_absoluteX="40dp"
+                        tools:layout_editor_absoluteY="50dp">
 
                     </TextView>
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Second visit:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView13"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView11">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="A doctor will check the test spot on your arm for a reaction. If there is a hard skin bump, the specialist will measure it. How big the hump is, your risk of TB exposure, and your chance of active TB disease determine its meaning. The doctor will determine if the lump indicates TB infection."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView12"></TextView>
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="300dp"
-                        android:src="@drawable/tbskintest"
-                        app:layout_constraintBottom_toTopOf="@id/imageView3"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.559"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView1">
-
-                    </ImageView>
-
-                    <ImageView
-                        android:id="@+id/imageView3"
+                    <WebView
+                        android:id="@+id/webView2"
                         android:layout_width="match_parent"
-                        android:layout_height="220dp"
-                        android:background="@color/shadow"
-                        app:layout_constraintBottom_toTopOf="@id/imageView4"
-                        app:layout_constraintTop_toBottomOf="@id/imageView2"
-                        tools:layout_editor_absoluteX="16dp">
-
-                    </ImageView>
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="2. TB Blood Test"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView15"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@id/imageView3">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="It is also known as an IGRA test. A tiny needle will be used to draw blood from an arm vein. The needle will draw a small volume of blood into a test tube or vial. Needle insertion and removal may sting. This typically takes less than five minutes."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView3"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView14">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="wrap_content"
                         android:layout_height="300dp"
-                        android:src="@drawable/tbbloodtest"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.559"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView3">
-
-                    </ImageView>
+                        app:layout_constraintTop_toBottomOf="@id/imageView2"
+                        app:layout_constraintVertical_bias="1.0" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -398,14 +426,9 @@
             </LinearLayout>
         </ScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

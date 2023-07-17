@@ -12,6 +12,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAidAndDisasterManagementApp">
         <activity
+            android:name=".DrugsPrevention"
+            android:exported="false" />
+        <activity
+            android:name=".MythsAndReality"
+            android:exported="false" />
+
+        <activity
+            android:name=".TreatmentAids"
+            android:exported="false" />
+        <activity
+            android:name=".consumption"
+            android:exported="false" />
+        <activity
+            android:name=".substances"
+            android:exported="false" />
+        <activity
+            android:name=".seizures"
+            android:exported="false" />
+        <activity
+            android:name=".burns"
+            android:exported="false" />
+        <activity
+            android:name=".choking"
+            android:exported="false" />
+
+        <activity
+            android:name=".Symptoms"
+            android:exported="false" />
+        <activity
+            android:name=".AidsVsHiv"
+            android:exported="false" />
+        <activity
             android:name=".treatment"
             android:exported="false" />
         <activity

@@ -10,7 +10,7 @@ class FirstAid : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aid)
 
-        getSupportActionBar()?.setTitle("First Aid");
+        getSupportActionBar()?.setTitle("FIRST AID");
 
         // calling the action bar
         var actionBar = getSupportActionBar()
@@ -41,6 +41,30 @@ class FirstAid : AppCompatActivity() {
             val Intent= Intent(this,splints::class.java)
             startActivity(Intent)
         }
+
+        //switching to choking activity
+        val buttonchoking=findViewById<Button>(R.id.buttonchoking)
+        buttonchoking.setOnClickListener{
+            val Intent= Intent(this,choking::class.java)
+            startActivity(Intent)
+        }
+
+        //switching to burns activity
+        val buttonburns=findViewById<Button>(R.id.buttonBurns)
+        buttonburns.setOnClickListener{
+            val Intent= Intent(this,burns::class.java)
+            startActivity(Intent)
+        }
+
+        //switching to seizures activity
+        val buttonseizures=findViewById<Button>(R.id.buttonseizures)
+        buttonseizures.setOnClickListener{
+            val Intent= Intent(this,seizures::class.java)
+            startActivity(Intent)
+        }
+
+
+
 
 
 

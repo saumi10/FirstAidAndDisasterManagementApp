@@ -24,53 +24,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintBottom_toTopOf="@id/cardView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="WHAT IS AIDS"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageViewAids1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewAids1"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:paddingRight="20dp"
-                        android:src="@drawable/what"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
@@ -115,6 +68,13 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonaidsvshiv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -168,105 +128,20 @@
 
                     </ImageView>
 
+                    <Button
+                        android:id="@+id/buttonsymptoms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/shadow"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
 
-        <TextView
-            android:layout_width="170dp"
-            android:layout_height="160dp"
-            android:gravity="center"
-            android:text="NEED FOR TESTING"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:fontFamily="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageViewAids4"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </TextView>
-
-        <ImageView
-            android:id="@+id/imageViewAids4"
-            android:layout_width="100dp"
-            android:layout_height="160dp"
-            android:paddingLeft="20dp"
-            android:src="@drawable/testing"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </ImageView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView5"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/shadow"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@id/cardView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:gravity="center"
-            android:text="HOW DOES HIV SPREAD?"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:fontFamily="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageViewAids5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </TextView>
-
-        <ImageView
-            android:id="@+id/imageViewAids5"
-            android:layout_width="100dp"
-            android:layout_height="160dp"
-            android:paddingRight="20dp"
-            android:src="@drawable/spread"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </ImageView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
@@ -279,7 +154,7 @@
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -311,6 +186,12 @@
                 app:layout_constraintTop_toTopOf="parent">
 
             </ImageView>
+            <Button
+                android:id="@+id/buttontreatmentaids"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" >
+            </Button>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

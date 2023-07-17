@@ -10,7 +10,7 @@ class Tb : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tb)
 
-        getSupportActionBar()?.setTitle("Tuberculosis");
+        getSupportActionBar()?.setTitle("TUBERCULOSIS");
 
         // calling the action bar
         var actionBar = getSupportActionBar()

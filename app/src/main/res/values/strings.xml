@@ -6,4 +6,14 @@
     <string name="url">https://redcrosskarnataka.org/</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="seizure1"> Epilepsy is a brain condition that causes a person to have seizures. It is one of the most common disorders of the nervous system.\n
+        There are different types of seizures. The type of seizure depends on which part and how much of the brain is affected and what happens during the seizure. The 2 main categories of epileptic seizures are <b>focal (partial) seizure</b> and <b>generalized seizure</b>.</string>
+    <string name="seizure2"> A seizure can be caused by many things. These can include:\n
+        1.An imbalance of nerve-signaling brain chemicals (neurotransmitters)\n
+        2.Brain tumor\n
+        3.Stroke\n
+        4.Brain damage from illness or injury\n
+        Epilepsy may be caused by a combination of these. In most cases, the cause of epilepsy can’t be found.</string>
+
 </resources>

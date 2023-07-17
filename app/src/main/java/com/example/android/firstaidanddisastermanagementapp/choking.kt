@@ -6,17 +6,17 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class BasicSanitation : AppCompatActivity() {
+class choking : AppCompatActivity() {
 
     private lateinit var webView1: WebView
     private lateinit var webView2: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic_sanitation)
+        setContentView(R.layout.activity_choking)
 
-        getSupportActionBar()?.setTitle("BASIC SANITATION");
-
+        //to change title of action bar of respective activity
+        getSupportActionBar()?.setTitle("CHOKING");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -27,7 +27,7 @@ class BasicSanitation : AppCompatActivity() {
         webView1.webViewClient = WebViewClient()
 
 
-        val videoId = "IisgnbMfKvI"
+        val videoId = "6E9AXXRdkfE"
         val videoUrl = "https://www.youtube.com/embed/$videoId"
 
         webView1.loadData(
@@ -41,7 +41,7 @@ class BasicSanitation : AppCompatActivity() {
         webView2.webViewClient = WebViewClient()
 
 
-        val videoId2 = "kpgxMA5St0g"
+        val videoId2 = "ePodw7L_mFM"
         val videoUrl2 = "https://www.youtube.com/embed/$videoId2"
 
         webView2.loadData(

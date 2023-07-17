@@ -69,6 +69,14 @@
 
                     </ImageView>
 
+                    <Button
+                        android:id="@+id/buttonsubstances"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
@@ -116,6 +124,14 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonconsumption"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -168,6 +184,14 @@
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
+                    <Button
+                        android:id="@+id/buttonmyth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -217,6 +241,14 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonpreventiondrugs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

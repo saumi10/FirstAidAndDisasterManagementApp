@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 
-class screening : AppCompatActivity() {
+class seizures : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_screening)
+        setContentView(R.layout.activity_seizures)
 
         //to change title of action bar of respective activity
-        getSupportActionBar()?.setTitle("TB SCREENING");
+        getSupportActionBar()?.setTitle("SEIZURES");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

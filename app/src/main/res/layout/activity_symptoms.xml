@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screening">
-
+    tools:context=".Symptoms">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutMain"
@@ -40,12 +39,11 @@
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="match_parent"
-                        android:layout_height="1100dp"
+                        android:layout_height="1370dp"
                         android:background="@color/shadow"
                         app:layout_constraintBottom_toTopOf="@id/imageView2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
-
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
@@ -54,8 +52,8 @@
 
                     <ImageView
                         android:id="@+id/imageNumber1"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:src="@drawable/numberonenew"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -71,14 +69,18 @@
                         android:layout_width="318dp"
                         android:layout_height="50dp"
                         android:gravity="center"
-                        android:text="WHAT IS TB SCREENING?"
+                        android:text="PRIMARY INFECTION
+                           (ACUTE HIV)"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
+                        app:layout_constraintBottom_toTopOf="@id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@id/imageNumber1"
+                        app:layout_constraintTop_toTopOf="@+id/imageView1"
+                        app:layout_constraintVertical_bias="1.0">
 
                     </TextView>
 
@@ -88,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="If the blockage is severe, they may be holding their chest or neck and won't be able to speak, breathe or cough, and you will need to help them."
+                        android:text="HIV infection can cause a flu-like sickness in 2–4 weeks. Primary HIV infection might last weeks."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
@@ -107,7 +109,7 @@
                         android:layout_marginBottom="8dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Two types of conditions caused by TB germs:"
+                        android:text="Symptoms:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         android:textStyle="bold"
@@ -126,10 +128,10 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="1. Latent TB infection"
+                        android:text="Fever, headache, muscle aches and joint pain, rash
+, sore throat and painful mouth sores, swollen lymph glands which are mainly on the neck, diarrhea, weight loss, cough or night sweats."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView5"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -145,35 +147,47 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="It occurs when you carry TB germs but are not sick. You have no symptoms or contagiousness. However,the bacteria could spread and make you sick. To avoid active TB, latent TB infection is treated."
+                        android:text="These symptoms may go unnoticed.  However, the amount of virus in your bloodstream (viral load) is quite high at this time. The infection spreads more easily during primary infection than during the next stage.
+"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView6"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView4"
-                        tools:layout_editor_absoluteX="40dp"
-                        tools:layout_editor_absoluteY="50dp">
+                        app:layout_constraintTop_toBottomOf="@id/textView4">
 
                     </TextView>
+
+
+                    <ImageView
+                        android:id="@+id/imageNumber2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/numbertwonew"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintEnd_toStartOf="@id/textView6"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/textView2"
+                        app:layout_constraintVertical_bias="0.337">
+
+                    </ImageView>
 
                     <TextView
                         android:id="@+id/textView6"
                         android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="2. Active TB disease"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="CLINICAL LATENT INFECTION (CHRONIC HIV)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView7"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imageNumber2"
                         app:layout_constraintTop_toBottomOf="@id/textView5">
 
                     </TextView>
@@ -182,30 +196,32 @@
                         android:id="@+id/textView7"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="It indicates that TB germs are actively causing illness in your body. Your lungs or throat might transfer TB germs. Antibiotics usually treat TB. It can kill if left untreated."
+                        android:text="In this stage of infection, HIV is still present in the body and in white blood cells. Many may not have symptoms or infections throughout this period. Antiretroviral therapy (ART) can prolong this stage."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
+                        android:textColor="@color/black"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView8"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/textView6">
 
                     </TextView>
 
                     <ImageView
-                        android:id="@+id/imageNumber2"
+                        android:id="@+id/imageNumber3"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:layout_marginTop="532dp"
-                        android:src="@drawable/numbertwonew"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:src="@drawable/numberthreenew"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintEnd_toStartOf="@id/textView8"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageNumber1">
+                        app:layout_constraintTop_toTopOf="@id/textView2"
+                        app:layout_constraintVertical_bias="0.487">
 
                     </ImageView>
 
@@ -214,15 +230,15 @@
                         android:layout_width="318dp"
                         android:layout_height="50dp"
                         android:gravity="center"
-                        android:text="TYPES OF TESTS"
+                        android:text="SYMPTOMATIC HIV INFECTION"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/imageNumber2"
                         app:layout_constraintTop_toBottomOf="@id/textView7"
-                        tools:layout_editor_absoluteY="582dp">
+                        app:layout_constraintBottom_toTopOf="@id/textView9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imageNumber3">
 
                     </TextView>
 
@@ -230,12 +246,13 @@
                         android:id="@+id/textView9"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="1. TB Skin Test"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
+                        android:text="Symptoms:"
                         android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView10"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -251,10 +268,9 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="First visit:"
+                        android:text="Most people can take TB drugs without serious side effects. Your doctor may recommend stopping a medicine if you suffer significant adverse effects. Drug doses may need to be adjusted."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView11"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -264,21 +280,34 @@
 
                     </TextView>
 
+                    <ImageView
+                        android:id="@+id/imageNumber4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/numberfour"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintEnd_toStartOf="@id/textView11"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/textView2"
+                        app:layout_constraintVertical_bias="0.671">
+
+                    </ImageView>
+
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="A doctor will inject a small amount of fluid called Tuberculin into your lower arm with a tiny needle. The fluid contains TB-bacteria protein. It cannot cause illness but will cause an arm bump. The test spot will remain uncovered."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/shadow3"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="PROGRESSION TO AIDS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         app:fontFamily="serif"
+                        app:layout_constraintTop_toBottomOf="@id/textView10"
                         app:layout_constraintBottom_toTopOf="@id/textView12"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView10">
+                        app:layout_constraintStart_toEndOf="@id/imageNumber4">
 
                     </TextView>
 
@@ -288,10 +317,9 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Second visit:"
+                        android:text="Untreated HIV usually leads to AIDS in 8–10 years. AIDS destroys your immune system. You will be more susceptible to ailments that wouldn't normally affect a healthy individual. These are known as opportunistic cancers or infections."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:textColor="@color/shadow3"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView13"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -305,41 +333,21 @@
                         android:id="@+id/textView13"
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="A doctor will check the test spot on your arm for a reaction. If there is a hard skin bump, the specialist will measure it. How big the hump is, your risk of TB exposure, and your chance of active TB disease determine its meaning. The doctor will determine if the lump indicates TB infection."
+                        android:text="Symptoms:"
+                        android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+                        app:layout_constraintBottom_toTopOf="@id/textView14"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.539"
+                        app:layout_constraintHorizontal_bias="0.533"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView12"></TextView>
+                        app:layout_constraintTop_toBottomOf="@id/textView12">
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="300dp"
-                        android:src="@drawable/tbskintest"
-                        app:layout_constraintBottom_toTopOf="@id/imageView3"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.559"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView1">
-
-                    </ImageView>
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp"
-                        android:background="@color/shadow"
-                        app:layout_constraintBottom_toTopOf="@id/imageView4"
-                        app:layout_constraintTop_toBottomOf="@id/imageView2"
-                        tools:layout_editor_absoluteX="16dp">
-
-                    </ImageView>
+                    </TextView>
 
                     <TextView
                         android:id="@+id/textView14"
@@ -347,47 +355,27 @@
                         android:layout_height="wrap_content"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
-                        android:text="2. TB Blood Test"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toTopOf="@id/textView15"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.533"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@id/imageView3">
-
-                    </TextView>
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="318dp"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="It is also known as an IGRA test. A tiny needle will be used to draw blood from an arm vein. The needle will draw a small volume of blood into a test tube or vial. Needle insertion and removal may sting. This typically takes less than five minutes."
+                        android:text="Sweats, chills, recurring fever, chronic diarrhea, swollen lymph glands, persistent white spots or unusual lesions on your tongue or in your mouth, persistent and unexplained fatigue, weakness, skin rashes or bumps or weight loss."
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
                         app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView3"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.539"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/textView14">
+                        app:layout_constraintTop_toBottomOf="@id/textView13">
 
                     </TextView>
 
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
                         android:layout_height="300dp"
-                        android:src="@drawable/tbbloodtest"
+                        android:src="@drawable/symptomaids"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.559"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/imageView3">
+                        app:layout_constraintTop_toBottomOf="@id/imageView1">
 
                     </ImageView>
 
@@ -401,11 +389,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
-
-
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

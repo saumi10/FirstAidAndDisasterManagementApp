@@ -6,28 +6,28 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 
-class BasicSanitation : AppCompatActivity() {
+class burns : AppCompatActivity() {
 
     private lateinit var webView1: WebView
     private lateinit var webView2: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic_sanitation)
+        setContentView(R.layout.activity_burns)
 
-        getSupportActionBar()?.setTitle("BASIC SANITATION");
-
+        //to change title of action bar of respective activity
+        getSupportActionBar()?.setTitle("BURNS");
 
         //to show back button on action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //webview
-        webView1 = findViewById(R.id.webView)
+        webView1 = findViewById(R.id.webView1)
         webView1.settings.javaScriptEnabled = true
         webView1.webViewClient = WebViewClient()
 
 
-        val videoId = "IisgnbMfKvI"
+        val videoId = "B51VgoEZcDs"
         val videoUrl = "https://www.youtube.com/embed/$videoId"
 
         webView1.loadData(
@@ -41,7 +41,7 @@ class BasicSanitation : AppCompatActivity() {
         webView2.webViewClient = WebViewClient()
 
 
-        val videoId2 = "kpgxMA5St0g"
+        val videoId2 = "Nh-tC-KzGUg"
         val videoUrl2 = "https://www.youtube.com/embed/$videoId2"
 
         webView2.loadData(
@@ -51,9 +51,9 @@ class BasicSanitation : AppCompatActivity() {
         )
 
 
+
+
     }
-
-
 
     //function to make back button work
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -8,7 +8,7 @@ class DisasterManagement : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_disaster_management)
 
-        getSupportActionBar()?.setTitle("Disaster Management");
+        getSupportActionBar()?.setTitle("DISASTER MANAGEMENT");
 
         // calling the action bar
         var actionBar = getSupportActionBar()
