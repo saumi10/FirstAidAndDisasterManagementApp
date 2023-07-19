@@ -6,4 +6,318 @@
     android:layout_height="match_parent"
     tools:context=".DrugsPrevention">
 
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/shadow">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2600dp"
+                    android:background="@color/shadow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="Alchohol and Drug Prevention"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="Young and adolescent minds could be moulded in any direction depending on the kind of exposure they get. They might befriend abusers and get into the habit of drinking, smoking or taking drugs. At this point in time, it is the responsibility of the parents as well as the teachers to handle the issue sensitively and guide them in the right direction. \nHere are the top five ways to prevent substance abuse::\n\n\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView3">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="Understand how substance \nabuse develops"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.542"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/webView1"></TextView>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="Substance abuse starts by:\n\n
+Using addictive drugs (illicit or prescribed) for recreational purposes\n\n
+Seeking out intoxication every time you use\n\n
+Abusing prescription medication:\n\n\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView5">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="Avoid Temptation and \nPeer Pressure"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView6">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="Develop healthy friendships and relationships by avoiding friends or family members who pressure you to use substances. It’s often said “we become most like those we surround ourselves by,” meaning if you surround yourself with people who abuse drugs and alcohol you are more likely to as well. Peer pressure is a major part of life for teens and adults. If you are looking to stay drug free develop a good way to just say no, prepare a good excuse or plan ahead of time to keep from giving into peer pressure.\n\n\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView7">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text=" Seek help for mental illness"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView8"></TextView>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text=" Mental illness and substance abuse often go hand in hand. If you are dealing with a mental illness such as anxiety, depression or post-traumatic stress disorder you should seek professional help from a licensed therapist or counselor. A professional will provide you with healthy coping skills to alleviate your symptoms without turning to drugs and alcohol.\n\n\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView9">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="Examine the risk factors"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView10"></TextView>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text=" Look at your family history of mental illness and addiction, several studies have shown that this disease tends to run in the family, but can be prevented. The more you are aware of your biological, environmental and physical risk factors the more likely you are to overcome them.\n\n\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView11">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="Examine the risk factors"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView12">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:gravity="left"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text=" People often turn to drugs and alcohol when something in their life is missing or not working. Practicing stress management skills can help you overcome these life stressors and will help you live a balanced and healthy life.\n\n
+
+Develop goals and dreams for your future. These will help you focus on what you want and help you realize that drugs and alcohol will simply get in the way and hinder you from achieving your goals.
+
+.\n"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.156"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView13">
+
+                </TextView>
+
+
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <WebView
+                    android:id="@+id/webView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView14"
+                    tools:layout_editor_absoluteY="980dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="A Short Film On Drugs"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/webView2">
+
+                </TextView>
+
+                <WebView
+                    android:id="@+id/webView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView15" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

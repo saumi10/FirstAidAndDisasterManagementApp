@@ -77,8 +77,8 @@
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@id/imageNumber1"
+                        app:layout_constraintHorizontal_bias="0.537"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/imageView1"
                         app:layout_constraintVertical_bias="1.0">
 
@@ -165,13 +165,12 @@
                         android:id="@+id/imageNumber2"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
+                        android:layout_marginTop="480dp"
                         android:src="@drawable/numbertwonew"
-                        app:layout_constraintBottom_toBottomOf="@id/imageView1"
-                        app:layout_constraintEnd_toStartOf="@id/textView6"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@id/textView2"
-                        app:layout_constraintVertical_bias="0.337">
+                        app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
 
@@ -187,7 +186,8 @@
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView7"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/imageNumber2"
+                        app:layout_constraintHorizontal_bias="0.537"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/textView5">
 
                     </TextView>
@@ -197,6 +197,7 @@
                         android:layout_width="318dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
                         android:text="In this stage of infection, HIV is still present in the body and in white blood cells. Many may not have symptoms or infections throughout this period. Antiretroviral therapy (ART) can prolong this stage."
@@ -217,7 +218,7 @@
                         android:layout_height="45dp"
                         android:src="@drawable/numberthreenew"
                         app:layout_constraintBottom_toBottomOf="@id/imageView1"
-                        app:layout_constraintEnd_toStartOf="@id/textView8"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@id/textView2"
@@ -235,10 +236,11 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintTop_toBottomOf="@id/textView7"
                         app:layout_constraintBottom_toTopOf="@id/textView9"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/imageNumber3">
+                        app:layout_constraintHorizontal_bias="0.494"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView7">
 
                     </TextView>
 
@@ -250,9 +252,9 @@
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
                         android:text="Symptoms:"
-                        android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
+                        android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView10"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -286,7 +288,7 @@
                         android:layout_height="45dp"
                         android:src="@drawable/numberfour"
                         app:layout_constraintBottom_toBottomOf="@id/imageView1"
-                        app:layout_constraintEnd_toStartOf="@id/textView11"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@id/textView2"
@@ -304,10 +306,10 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         app:fontFamily="serif"
-                        app:layout_constraintTop_toBottomOf="@id/textView10"
                         app:layout_constraintBottom_toTopOf="@id/textView12"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/imageNumber4">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView10">
 
                     </TextView>
 
@@ -337,9 +339,9 @@
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
                         android:text="Symptoms:"
-                        android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/shadow3"
+                        android:textStyle="bold"
                         app:fontFamily="serif"
                         app:layout_constraintBottom_toTopOf="@id/textView14"
                         app:layout_constraintEnd_toEndOf="parent"

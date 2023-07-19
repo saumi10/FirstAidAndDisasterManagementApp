@@ -16,4 +16,97 @@
         4.Brain damage from illness or injury\n
         Epilepsy may be caused by a combination of these. In most cases, the cause of epilepsy can’t be found.</string>
 
+    <string name="earth_para1">
+        An earthquake is a sudden shaking of Earth\'s surface caused by the movement of rocks deep underneath.\n
+        Most quakes are unnoticeable by people on Earth\'s surface. Thousands of quakes occur every day but are too weak to be felt.\n
+
+    </string>
+
+    <string name="earth_para2">
+        1.<b>Plate tectonics</b> - The Earth’s outermost layer is fragmented into about 15 major slabs called tectonic plates. These slabs form the lithosphere, which is comprised of the crust (continental and oceanic) and the upper part of the mantle. Tectonic plates move very slowly relative to each other, typically a few centimetres per year, but this still causes a huge amount of deformation at the plate boundaries, which in turn results in earthquakes.\n
+        2.<b>Elastic rebound theory</b> - Before an earthquake, the buildup of stress in the rocks on either side of a fault results in gradual deformation. Eventually, this deformation exceeds the frictional force holding the rocks together and sudden slip occurs along the fault. This releases the accumulated stress and the rocks on either side of the fault return to their original shape (elastic rebound) but are offset on either side of the fault.\n
+
+
+    </string>
+
+    <string name="epi_para1">
+        An epidemic is a sudden disease outbreak that affects a large number of people in a particular region, community, or population.\n
+        An epidemic of an infectious disease can happen if the virus, bacteria, or other cause of the disease has recently grown stronger, is introduced somewhere it has never been before, or finds new ways to enter the bodies of those it is affecting. It also can happen if people somehow grow more susceptible to the cause of the disease or have greater exposure to it.\n
+        Epidemics typically are classified as common-source or propagated. A disease is labeled one or the other based on the way it spreads through a group of people.
+
+    </string>
+
+    <string name="epi_para2">
+        An <b>epidemic</b> involves the wide-ranging spread of a disease throughout an entire area or particular community where it’s not permanently prevalent. A <b>pandemic</b> involves an even wider spread, often reaching across the entire world. The word <b>endemic</b> is used to describe a disease that persistently and regularly spreads within a particular area or region (that is, it never fully goes away).
+
+    </string>
+
+    <string name="epi_para3">
+        Follow public health guidelines\n
+        Practice good hygiene\n
+        Wear masks\n
+        Maintain physical distancing\n
+        Follow respiratory etiquette\n
+        Clean and disinfect frequently touched surfaces\n
+        Stay home if you\'re feeling unwell\n
+        Stay informed and avoid misinformation\n
+        Support vaccination efforts\n
+    </string>
+
+    <string name="epi_para4">
+        Due to Covid-19 pandemic many people have suffered, we have supported the community by donating them sanitizers, soaps, face masks, grocery kits etc., and also we have extended financial support of Rs.3,00,000 to all the Red Cross District branches.
+    </string>
+
+    <string name="flood_para1">
+        Floods are the most frequent type of natural disaster and occur when an overflow of water submerges land that is usually dry. Floods are often caused by heavy rainfall, rapid snow-melt or a storm surge from a tropical cyclone or tsunami in coastal areas.
+
+    </string>
+
+    <string name="flood_para2">
+        A flood can develop in a many ways. The most common is when rivers or streams overflow their banks. These floods are called riverine floods. Heavy rain, a broken dam or levee, rapid ice-melt in the mountains, or even a beaver dam in a vulnerable spot can overwhelm a river and send it spreading over nearby land. The land surrounding a river is called a flood plain.\n\n
+
+        Coastal flooding, also called estuarine flooding, happens when a large storm or tsunami causes the sea to rush inland.
+    </string>
+    <string name="flood_para3">
+        What to do before a flood\n
+
+        <b>To prepare for a flood, you should:</b>\n
+
+        Avoid building in flood prone areas unless you elevate and reinforce your home.\n
+        Elevate the furnace, water heater, and electric panel if susceptible to flooding.\n
+        Install "Check Valves" in sewer traps to prevent floodwater from backing up into the drains of your home.\n
+        Contact community officials to find out if they are planning to construct barriers (levees, beams and flood walls) to stop floodwater from entering the homes in your area.\n
+        Seal the walls in your basement with waterproofing compounds to avoid seepage.\n
+        <b>If a flood is likely to hit  your area, you should:</b>\n
+
+        Listen to the radio or television for information.\n
+        Be aware that flash flooding can occur. If there is any possibility of a flash flood, move immediately to higher ground. Do not wait for instructions to move.\n
+        Be aware of streams, drainage channels, canyons, and other areas known to flood suddenly. Flash floods can occur in these areas with or without such typical warnings as rain clouds or heavy rain.\n
+        <b>If you must prepare to evacuate, you should:</b>\n
+
+        Secure your home. If you have time, bring in outdoor furniture. Move essential items to an upper floor.\n
+        Turn off utilities at the main switches or valves if instructed to do so. Disconnect electrical appliances. Do not touch electrical equipment if you are wet or standing in water.\n
+        <b>If you have to leave your home, remember these evacuation tips:</b>\n
+
+        Do not walk through moving water. Six inches of moving water can make you fall. If you have to walk in water, walk where the water is not moving. Use a stick to check the firmness of the ground in front of you.\n
+        Do not drive into flooded areas. If floodwaters rise around your car, abandon the car and move to higher ground if you can do so safely. You and the vehicle can be quickly swept away.\n</string>
+
+    <string name="flood_para4">
+        In the year 2019,floods have caused huge damage to North Karnataka Districts and few of South Karnataka Districts as well, Disaster Emergency Relief fund was sanctioned by National Head Quarters and also relief materials were sent in huge numbers and also we have received many donations from the people who supported for the cause.</string>
+
+    <string name="forest_para1">
+        Wildfire, also called forest, bush or vegetation fire, can be described as any uncontrolled and non-prescribed combustion or burning of plants in a natural setting such as a forest, grassland, brush land or tundra, which consumes the natural fuels and spreads based on environmental conditions (e.g., wind, topography). Wildfire can be incited by human actions, such as land clearing, extreme drought or in rare cases by lightning.\n
+        Types of forest fires:\n
+        <b>    1. Crown fires\n
+             2. Surface fires\n
+             3. Ground fires\n
+        </b>
+    </string>
+
+    <string name="forest_para2">
+      <b>  1.Natural Causes - Lightning\n
+         2.Man made Causes\n
+         3.Environmental Causes - Based on climate\n</b>
+    </string>
+
 </resources>

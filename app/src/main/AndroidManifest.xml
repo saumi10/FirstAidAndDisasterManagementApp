@@ -12,12 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAidAndDisasterManagementApp">
         <activity
+            android:name=".Epidemic"
+            android:exported="false" />
+        <activity
+            android:name=".ForestFires"
+            android:exported="false" />
+        <activity
+            android:name=".Earthquake"
+            android:exported="false" />
+        <activity
+            android:name=".Floods"
+            android:exported="false" />
+        <activity
             android:name=".DrugsPrevention"
             android:exported="false" />
         <activity
             android:name=".MythsAndReality"
             android:exported="false" />
-
         <activity
             android:name=".TreatmentAids"
             android:exported="false" />
@@ -36,7 +47,6 @@
         <activity
             android:name=".choking"
             android:exported="false" />
-
         <activity
             android:name=".Symptoms"
             android:exported="false" />

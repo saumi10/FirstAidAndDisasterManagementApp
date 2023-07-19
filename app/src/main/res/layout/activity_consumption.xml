@@ -6,4 +6,135 @@
     android:layout_height="match_parent"
     tools:context=".consumption">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1900dp"
+                        android:background="@color/shadow"
+                        app:layout_constraintBottom_toTopOf="@id/webView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </ImageView>
+
+
+                    <ImageView
+                        android:id="@+id/imageNumber1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/numberonenew"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.007">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="283dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="HARMFUL EFFECTS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingStart="10dp"
+                        android:text="The harmful effects of consuming drugs can vary depending on the specific drug involved, the dosage, the frequency of use, and individual factors such as overall health and genetics. However, here are some general examples of the potential negative consequences associated with drug consumption:\n\n
+
+Physical Health Effects: Many drugs can have detrimental effects on physical health. For instance, substances like cocaine and methamphetamine can cause cardiovascular problems, including heart attacks and strokes. Inhalants and certain volatile substances can damage the respiratory system, while long-term use of drugs like alcohol and opioids can lead to liver damage.\n\n
+
+Mental Health Effects: Drug consumption can have a profound impact on mental health. Some drugs can induce feelings of anxiety, paranoia, and panic attacks. Others, like hallucinogens, can lead to psychotic episodes or trigger underlying mental health conditions. Prolonged drug use may contribute to the development of substance use disorders, which are characterized by addiction and dependence.\n\n
+
+Impaired Cognitive Function: Many drugs affect cognitive function and can impair memory, attention, judgment, and decision-making abilities. This can have significant consequences for daily functioning, including difficulties at work or school, impaired driving skills, and impaired relationships.\n\n
+
+Social and Interpersonal Consequences: Drug consumption can strain relationships with family, friends, and colleagues. Substance abuse can lead to conflicts, alienation, and breakdowns in communication. It can also contribute to financial difficulties, legal problems, and a loss of productivity and employment.\n\n
+
+Overdose and Death: The use of certain drugs, particularly opioids and central nervous system depressants, carries a significant risk of overdose. An overdose occurs when the body is overwhelmed by the amount of drug ingested, leading to potentially life-threatening symptoms or death.\n\n
+
+It's important to note that the severity and specific effects of drug consumption can vary widely depending on the circumstances. If you or someone you know is struggling with drug consumption, seeking professional help from healthcare providers or addiction specialists is strongly recommended.\n\n
+"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/shadow3"
+                        app:fontFamily="serif"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.494"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                    </TextView>
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

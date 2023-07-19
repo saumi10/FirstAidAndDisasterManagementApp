@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Epidemic">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:background="@color/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageNumber1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/numberonenew"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="288dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="What is an epidemic?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.528"
+                    app:layout_constraintStart_toStartOf="@+id/imageNumber1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:background="@color/shadow"
+                android:padding="20dp"
+                android:text="@string/epi_para1"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:background="@color/shadow"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageNumber2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/numbertwonew"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="253dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Epidemic vs. Pandemic vs. Endemic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@color/shadow"
+                android:padding="20dp"
+                android:text="@string/epi_para2"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:background="@color/shadow"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageNumber3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/numberthreenew"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="281dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Safety measures to take"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:background="@color/shadow"
+                android:padding="20dp"
+                android:text="@string/epi_para3"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:background="@color/shadow">
+
+
+                <ImageView
+                    android:id="@+id/imageNumber4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/numberfour"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="250dp"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="IRCS Karnataka State Branch's role during the COVID -19 Pandemic"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:fontFamily="serif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:background="@color/shadow"
+                android:padding="20dp"
+                android:text="@string/epi_para4"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/img_1"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

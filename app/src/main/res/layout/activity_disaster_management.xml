@@ -70,159 +70,17 @@
 
                     </ImageView>
 
+                    <Button
+                        android:id="@+id/buttonFloods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="170dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="DROUGHT"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageViewDM2"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewDM2"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:paddingLeft="20dp"
-                        android:src="@drawable/drought"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView3"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="170dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="LANDSLIDES"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageViewDM3"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewDM3"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:layout_marginEnd="28dp"
-                        android:paddingLeft="20dp"
-                        android:src="@drawable/landslide"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView4"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="30dp"
-                android:backgroundTint="@color/shadow"
-                app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView3">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                    <TextView
-                        android:layout_width="170dp"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:text="CYCLONES"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:fontFamily="serif"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageViewDM4"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/imageViewDM4"
-                        android:layout_width="100dp"
-                        android:layout_height="160dp"
-                        android:paddingLeft="20dp"
-                        android:src="@drawable/cyclone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView5"
@@ -268,6 +126,12 @@
 
                     </ImageView>
 
+                    <Button
+                        android:id="@+id/buttonEarthquake"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
@@ -315,6 +179,13 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonForestfire"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -367,6 +238,13 @@
                         app:layout_constraintVertical_bias="0.0">
 
                     </ImageView>
+
+                    <Button
+                        android:id="@+id/buttonEpidemic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+                    </Button>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

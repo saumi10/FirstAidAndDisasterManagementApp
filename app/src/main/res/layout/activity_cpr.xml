@@ -166,7 +166,7 @@
                         android:paddingStart="10dp"
                         android:paddingBottom="10dp"
                         android:textStyle="bold"
-                        android:text="Step 1.Call an Ambulance (Dial 108)"
+                        android:text="Step 1.Call an Ambulance (Dial 112)"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/black"
                         app:fontFamily="serif"
