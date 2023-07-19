@@ -1,6 +1,6 @@
 # FirstAidAndDisasterManagementApp
 
-An android app built using Kotlin for INDIAN RED CRSS SOCIETY , KARNATAKA STATE BRANCH that aims to provide information on various first aid and disaster management techniques and also create awareness about 
+An android app built using Kotlin for INDIAN RED CROSS SOCIETY , KARNATAKA STATE BRANCH that aims to provide information on various first aid and disaster management techniques and also create awareness about 
 Drugs , AIDS , TB and basic sanitation practices .
 
 We've also connected the website of IRCS to the app like various registration forms and other data.
