@@ -14,3 +14,6 @@ Used XML for frontend
 Used figma for creating a custom lottie animation for the splash screen
 
 Used android studio to build the whole app.
+
+WATCH APP DEMO HERE:
+https://youtu.be/ECFnbRuMyLY
