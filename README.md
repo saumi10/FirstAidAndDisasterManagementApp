@@ -8,6 +8,9 @@ We've also connected the website of IRCS to the app like various registration fo
 We've also added buttons for the social media handles of IRCS inside the app.
 
 Used Kotlin for backend
+
 Used XML for frontend
+
 Used figma for creating a custom lottie animation for the splash screen
+
 Used android studio to build the whole app.
